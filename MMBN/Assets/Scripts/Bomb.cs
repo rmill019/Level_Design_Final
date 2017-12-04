@@ -7,12 +7,17 @@ public class Bomb : Projectile {
 	protected Vector3			p0;
 	protected Vector3			p1;
 	protected Vector3			p2;
-	protected PlayerControls 	playerControl;
+	protected Combat 			playerCombat;
+	protected PlayerControls	playerControl;
 	protected Transform 		playerTrans;
 
 	[Header("This section defines the bomb's properties")]
 	[Tooltip("How many panels to the right ('Front') will the bomb travel.")]
-	public int 					panelRange;
+	[SerializeField]
+	private int 				_playerPanelRange;
+	[SerializeField]
+	private int 				_enemyPanalRange;
+	private int					_panelRange;
 	public int 					movementDuration;
 	public float 				bombThrowHeight;
 
@@ -29,7 +34,8 @@ public class Bomb : Projectile {
 		rigid = GetComponent<Rigidbody> ();
 		boxColl = GetComponent<BoxCollider> ();
 		// TODO need to check if we're spawning from Player or Enemy
-		playerControl = GameObject.Find ("PlayerUnit_Basic").GetComponent<PlayerControls>();;
+		playerCombat = GameObject.Find ("PlayerUnit_Basic").GetComponent<Combat>();
+		playerControl = GameObject.Find ("PlayerUnit_Basic").GetComponent<PlayerControls>();
 
 	}
 
@@ -54,10 +60,10 @@ public class Bomb : Projectile {
 
 		// Set the positions that the bomb will travel once it's spawned
 		p0 = playerTrans.position;				// This is the initial position which is where the player is currently located
-		p0.y = playerControl.projectileOffset;
+		p0.y = playerCombat.projectileYOffset;
 		// TODO What happens if we're at the edge of the field?
 		// p2 is the final location where the bomb will end up which depends on value given to the variable "panelRange"
-		p2 = new Vector3 (Battlefield.Field [playerControl.playerX + panelRange, playerControl.playerZ].panelCord.x, transform.position.y, Battlefield.Field[playerControl.playerX, playerControl.playerZ].panelCord.z);
+		p2 = new Vector3 (Battlefield.Field [playerControl.playerX + _panelRange, playerControl.playerZ].panelCord.x, transform.position.y, Battlefield.Field[playerControl.playerX, playerControl.playerZ].panelCord.z);
 		p2.z -= bombZOffset;					// Final z position of the bomb must be modified to give it a cleaner appearance on the battlefield
 		p1 = (p2 - p0) / 2;						// p1 is the midway point between p0 and p2
 		p1.y = bombThrowHeight;					// We want an arc on the bomb so the y-value of the midway point needs to be raised by the value indicated with "bombThrowHeight" variable.
@@ -115,5 +121,31 @@ public class Bomb : Projectile {
 		}
 		// Call the Base class CheckLifetime function to see if it should be Destroyed.
 		base.CheckLifetime ();
+	}
+
+
+
+	/****************************
+	 * 		Properties			*
+	 * *************************/
+
+	public int PlayerPanelRange
+	{
+		get { return _playerPanelRange; }
+		set { _playerPanelRange = value; }
+	}
+
+
+	public int EnemyPanelRange
+	{
+		get { return _enemyPanalRange; }
+		set { _enemyPanalRange = value; }
+	}
+
+
+	public int PanelRange
+	{
+		get { return _panelRange; }
+		set { _panelRange = value; }
 	}
 }

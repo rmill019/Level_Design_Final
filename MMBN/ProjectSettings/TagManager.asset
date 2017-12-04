@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Panel
   - Damage
+  - Ammo
+  - Melee
+  - Bomb
+  - Enemy
   layers:
   - Default
   - TransparentFX

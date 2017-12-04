@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44300318, g: 0.49219632, b: 0.57192606, a: 1}
+  m_IndirectSpecularColor: {r: 0.44300273, g: 0.49219579, b: 0.5719249, a: 1}
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -962,7 +962,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 383766777}
   m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 1.51, z: -0.6}
+  m_LocalPosition: {x: 0, y: 2.362, z: -2.075}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2983,6 +2983,29 @@ Prefab:
       propertyPath: lifetimeDuration
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 1047279639777590, guid: 2720181f5211f5e468f1e2fa951f6e27, type: 2}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 65619036204118748, guid: 2720181f5211f5e468f1e2fa951f6e27,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114518831440624262, guid: 2720181f5211f5e468f1e2fa951f6e27,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212744306454717940, guid: 2720181f5211f5e468f1e2fa951f6e27,
+        type: 2}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634388672272476, guid: 2720181f5211f5e468f1e2fa951f6e27, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2720181f5211f5e468f1e2fa951f6e27, type: 2}
   m_IsPrefabParent: 0
@@ -3639,6 +3662,22 @@ GameObject:
   m_PrefabParentObject: {fileID: 1047279639777590, guid: 2720181f5211f5e468f1e2fa951f6e27,
     type: 2}
   m_PrefabInternal: {fileID: 1464945488}
+--- !u!114 &1802273098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1802273094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dd5939f3fa45b74292183b344945572, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 1802347007493642, guid: 0fad9c357a4ae6e4f9b39532ce8174d7,
+    type: 2}
+  projectileXOffset: 0.6
+  projectileYOffset: 0.6
+  bombPrefab: {fileID: 1923801343680332, guid: 63bd2b100061c3945943522a175b1e6a, type: 2}
 --- !u!1 &1808210799
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ public class Projectile : MonoBehaviour {
 	protected Transform				parent;
 	protected SpriteRenderer 		parentRend;
 
-	// Make this a property?
+	//[SerializeField]
 	public float					xVelocity = 50f;
 	[SerializeField]
 	protected int 					damage;				// How much damage this instance of projectile deals
@@ -81,4 +81,11 @@ public class Projectile : MonoBehaviour {
 			Destroy (this.gameObject);
 		}
 	}
+
+
+//	public float XVelocity
+//	{
+//		get { return xVelocity; }
+//		set { xVelocity = value; }
+//	}
 }
