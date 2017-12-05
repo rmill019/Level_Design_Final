@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44300273, g: 0.49219579, b: 0.5719249, a: 1}
+  m_IndirectSpecularColor: {r: 0.44300318, g: 0.49219632, b: 0.57192606, a: 1}
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -120,6 +120,7 @@ GameObject:
   - component: {fileID: 75215830}
   - component: {fileID: 75215829}
   - component: {fileID: 75215832}
+  - component: {fileID: 75215833}
   m_Layer: 0
   m_Name: PanelB5
   m_TagString: Panel
@@ -182,8 +183,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.29, z: 1}
+  m_Center: {x: 0, y: 2.16, z: 0}
 --- !u!33 &75215831
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -210,6 +211,19 @@ MonoBehaviour:
   load: 0
   maxLoad: 0
   side: 0
+--- !u!114 &75215833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 75215827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b258786494595b4999a3fd3c5770c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToFade: 0
+  timesToFlicker: 0
 --- !u!1 &79824900
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,6 +236,7 @@ GameObject:
   - component: {fileID: 79824903}
   - component: {fileID: 79824902}
   - component: {fileID: 79824905}
+  - component: {fileID: 79824906}
   m_Layer: 0
   m_Name: PanelA5
   m_TagString: Panel
@@ -284,8 +299,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.29, z: 1}
+  m_Center: {x: 0, y: 2.16, z: 0}
 --- !u!33 &79824904
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -312,6 +327,19 @@ MonoBehaviour:
   load: 0
   maxLoad: 0
   side: 0
+--- !u!114 &79824906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 79824900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b258786494595b4999a3fd3c5770c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToFade: 0
+  timesToFlicker: 0
 --- !u!1 &84090283
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,6 +398,7 @@ GameObject:
   - component: {fileID: 100350762}
   - component: {fileID: 100350761}
   - component: {fileID: 100350764}
+  - component: {fileID: 100350765}
   m_Layer: 0
   m_Name: PanelA4
   m_TagString: Panel
@@ -432,8 +461,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.29, z: 1}
+  m_Center: {x: 0, y: 2.16, z: 0}
 --- !u!33 &100350763
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -460,6 +489,19 @@ MonoBehaviour:
   load: 0
   maxLoad: 0
   side: 0
+--- !u!114 &100350765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 100350759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b258786494595b4999a3fd3c5770c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToFade: 0
+  timesToFlicker: 0
 --- !u!1 &151923863
 GameObject:
   m_ObjectHideFlags: 0
@@ -747,6 +789,7 @@ GameObject:
   - component: {fileID: 330044352}
   - component: {fileID: 330044351}
   - component: {fileID: 330044355}
+  - component: {fileID: 330044356}
   m_Layer: 0
   m_Name: PanelB1
   m_TagString: Panel
@@ -796,8 +839,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.29, z: 1}
+  m_Center: {x: 0, y: 2.16, z: 0}
 --- !u!33 &330044353
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -837,6 +880,19 @@ MonoBehaviour:
   load: 0
   maxLoad: 0
   side: 0
+--- !u!114 &330044356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 330044350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b258786494595b4999a3fd3c5770c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToFade: 0
+  timesToFlicker: 0
 --- !u!1 &353778923
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,6 +1106,7 @@ GameObject:
   - component: {fileID: 401877079}
   - component: {fileID: 401877078}
   - component: {fileID: 401877081}
+  - component: {fileID: 401877082}
   m_Layer: 0
   m_Name: PanelC2
   m_TagString: Panel
@@ -1112,8 +1169,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.29, z: 1}
+  m_Center: {x: 0, y: 2.16, z: 0}
 --- !u!33 &401877080
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1140,6 +1197,19 @@ MonoBehaviour:
   load: 0
   maxLoad: 0
   side: 0
+--- !u!114 &401877082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 401877076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b258786494595b4999a3fd3c5770c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToFade: 0
+  timesToFlicker: 0
 --- !u!1 &465755170
 GameObject:
   m_ObjectHideFlags: 0
@@ -1152,6 +1222,7 @@ GameObject:
   - component: {fileID: 465755173}
   - component: {fileID: 465755172}
   - component: {fileID: 465755175}
+  - component: {fileID: 465755176}
   m_Layer: 0
   m_Name: PanelA6
   m_TagString: Panel
@@ -1214,8 +1285,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.29, z: 1}
+  m_Center: {x: 0, y: 2.16, z: 0}
 --- !u!33 &465755174
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1242,6 +1313,19 @@ MonoBehaviour:
   load: 0
   maxLoad: 0
   side: 0
+--- !u!114 &465755176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 465755170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b258786494595b4999a3fd3c5770c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToFade: 0
+  timesToFlicker: 0
 --- !u!1001 &500669807
 Prefab:
   m_ObjectHideFlags: 0
@@ -1285,6 +1369,11 @@ Prefab:
       propertyPath: m_Name
       value: Enemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 65502034137364900, guid: cbf3b533057f2474eba73d600ae2da26,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbf3b533057f2474eba73d600ae2da26, type: 2}
   m_IsPrefabParent: 0
@@ -1300,6 +1389,7 @@ GameObject:
   - component: {fileID: 535115395}
   - component: {fileID: 535115394}
   - component: {fileID: 535115397}
+  - component: {fileID: 535115398}
   m_Layer: 0
   m_Name: PanelC6
   m_TagString: Panel
@@ -1362,8 +1452,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.29, z: 1}
+  m_Center: {x: 0, y: 2.16, z: 0}
 --- !u!33 &535115396
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1390,6 +1480,19 @@ MonoBehaviour:
   load: 0
   maxLoad: 0
   side: 0
+--- !u!114 &535115398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 535115392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b258786494595b4999a3fd3c5770c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToFade: 0
+  timesToFlicker: 0
 --- !u!1 &590511970
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,6 +1505,7 @@ GameObject:
   - component: {fileID: 590511973}
   - component: {fileID: 590511972}
   - component: {fileID: 590511975}
+  - component: {fileID: 590511976}
   m_Layer: 0
   m_Name: PanelA2
   m_TagString: Panel
@@ -1464,8 +1568,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.29, z: 1}
+  m_Center: {x: 0, y: 2.16, z: 0}
 --- !u!33 &590511974
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1492,6 +1596,19 @@ MonoBehaviour:
   load: 0
   maxLoad: 0
   side: 0
+--- !u!114 &590511976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 590511970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b258786494595b4999a3fd3c5770c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToFade: 0
+  timesToFlicker: 0
 --- !u!1001 &647048407
 Prefab:
   m_ObjectHideFlags: 0
@@ -1534,6 +1651,11 @@ Prefab:
     - target: {fileID: 1058765743794670, guid: cbf3b533057f2474eba73d600ae2da26, type: 2}
       propertyPath: m_Name
       value: Enemy (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 65502034137364900, guid: cbf3b533057f2474eba73d600ae2da26,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbf3b533057f2474eba73d600ae2da26, type: 2}
@@ -1714,6 +1836,7 @@ GameObject:
   - component: {fileID: 702880675}
   - component: {fileID: 702880674}
   - component: {fileID: 702880677}
+  - component: {fileID: 702880678}
   m_Layer: 0
   m_Name: PanelB4
   m_TagString: Panel
@@ -1776,8 +1899,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.29, z: 1}
+  m_Center: {x: 0, y: 2.16, z: 0}
 --- !u!33 &702880676
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1804,6 +1927,19 @@ MonoBehaviour:
   load: 0
   maxLoad: 0
   side: 0
+--- !u!114 &702880678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 702880672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b258786494595b4999a3fd3c5770c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToFade: 0
+  timesToFlicker: 0
 --- !u!1 &757597443
 GameObject:
   m_ObjectHideFlags: 0
@@ -1891,6 +2027,7 @@ GameObject:
   - component: {fileID: 841312761}
   - component: {fileID: 841312760}
   - component: {fileID: 841312763}
+  - component: {fileID: 841312764}
   m_Layer: 0
   m_Name: PanelC4
   m_TagString: Panel
@@ -1953,8 +2090,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.29, z: 1}
+  m_Center: {x: 0, y: 2.16, z: 0}
 --- !u!33 &841312762
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1981,6 +2118,19 @@ MonoBehaviour:
   load: 0
   maxLoad: 0
   side: 0
+--- !u!114 &841312764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 841312758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b258786494595b4999a3fd3c5770c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToFade: 0
+  timesToFlicker: 0
 --- !u!1 &871894902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1993,6 +2143,7 @@ GameObject:
   - component: {fileID: 871894905}
   - component: {fileID: 871894904}
   - component: {fileID: 871894907}
+  - component: {fileID: 871894908}
   m_Layer: 0
   m_Name: PanelA1
   m_TagString: Panel
@@ -2052,11 +2203,11 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 871894902}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.29, z: 1}
+  m_Center: {x: 0, y: 2.16, z: 0}
 --- !u!33 &871894906
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2083,6 +2234,19 @@ MonoBehaviour:
   load: 0
   maxLoad: 0
   side: 0
+--- !u!114 &871894908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 871894902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b258786494595b4999a3fd3c5770c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToFade: 0
+  timesToFlicker: 0
 --- !u!1 &880936273
 GameObject:
   m_ObjectHideFlags: 0
@@ -2095,6 +2259,7 @@ GameObject:
   - component: {fileID: 880936276}
   - component: {fileID: 880936275}
   - component: {fileID: 880936278}
+  - component: {fileID: 880936279}
   m_Layer: 0
   m_Name: PanelC5
   m_TagString: Panel
@@ -2157,8 +2322,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.29, z: 1}
+  m_Center: {x: 0, y: 2.16, z: 0}
 --- !u!33 &880936277
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2185,6 +2350,19 @@ MonoBehaviour:
   load: 0
   maxLoad: 0
   side: 0
+--- !u!114 &880936279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 880936273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b258786494595b4999a3fd3c5770c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToFade: 0
+  timesToFlicker: 0
 --- !u!1 &990781171
 GameObject:
   m_ObjectHideFlags: 0
@@ -2583,6 +2761,7 @@ GameObject:
   - component: {fileID: 1313402728}
   - component: {fileID: 1313402727}
   - component: {fileID: 1313402730}
+  - component: {fileID: 1313402731}
   m_Layer: 0
   m_Name: PanelC3
   m_TagString: Panel
@@ -2645,8 +2824,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.29, z: 1}
+  m_Center: {x: 0, y: 2.16, z: 0}
 --- !u!33 &1313402729
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2673,6 +2852,19 @@ MonoBehaviour:
   load: 0
   maxLoad: 0
   side: 0
+--- !u!114 &1313402731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1313402725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b258786494595b4999a3fd3c5770c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToFade: 0
+  timesToFlicker: 0
 --- !u!1 &1347571424
 GameObject:
   m_ObjectHideFlags: 0
@@ -2985,7 +3177,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1047279639777590, guid: 2720181f5211f5e468f1e2fa951f6e27, type: 2}
       propertyPath: m_TagString
-      value: Enemy
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 65619036204118748, guid: 2720181f5211f5e468f1e2fa951f6e27,
         type: 2}
@@ -3005,6 +3197,16 @@ Prefab:
     - target: {fileID: 1634388672272476, guid: 2720181f5211f5e468f1e2fa951f6e27, type: 2}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 65619036204118748, guid: 2720181f5211f5e468f1e2fa951f6e27,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65619036204118748, guid: 2720181f5211f5e468f1e2fa951f6e27,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2720181f5211f5e468f1e2fa951f6e27, type: 2}
@@ -3117,6 +3319,7 @@ GameObject:
   - component: {fileID: 1511334488}
   - component: {fileID: 1511334487}
   - component: {fileID: 1511334490}
+  - component: {fileID: 1511334491}
   m_Layer: 0
   m_Name: PanelC1
   m_TagString: Panel
@@ -3179,8 +3382,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.29, z: 1}
+  m_Center: {x: 0, y: 2.16, z: 0}
 --- !u!33 &1511334489
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3207,6 +3410,19 @@ MonoBehaviour:
   load: 0
   maxLoad: 0
   side: 0
+--- !u!114 &1511334491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1511334485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b258786494595b4999a3fd3c5770c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToFade: 0
+  timesToFlicker: 0
 --- !u!1 &1632960682
 GameObject:
   m_ObjectHideFlags: 0
@@ -3219,6 +3435,7 @@ GameObject:
   - component: {fileID: 1632960685}
   - component: {fileID: 1632960684}
   - component: {fileID: 1632960687}
+  - component: {fileID: 1632960688}
   m_Layer: 0
   m_Name: PanelB2
   m_TagString: Panel
@@ -3281,8 +3498,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.29, z: 1}
+  m_Center: {x: 0, y: 2.16, z: 0}
 --- !u!33 &1632960686
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3309,6 +3526,19 @@ MonoBehaviour:
   load: 0
   maxLoad: 0
   side: 0
+--- !u!114 &1632960688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1632960682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b258786494595b4999a3fd3c5770c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToFade: 0
+  timesToFlicker: 0
 --- !u!1 &1646430765
 GameObject:
   m_ObjectHideFlags: 0
@@ -3567,6 +3797,7 @@ GameObject:
   - component: {fileID: 1753226506}
   - component: {fileID: 1753226505}
   - component: {fileID: 1753226508}
+  - component: {fileID: 1753226509}
   m_Layer: 0
   m_Name: PanelA3
   m_TagString: Panel
@@ -3629,8 +3860,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.29, z: 1}
+  m_Center: {x: 0, y: 2.16, z: 0}
 --- !u!33 &1753226507
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3657,6 +3888,19 @@ MonoBehaviour:
   load: 0
   maxLoad: 0
   side: 0
+--- !u!114 &1753226509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1753226503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b258786494595b4999a3fd3c5770c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToFade: 0
+  timesToFlicker: 0
 --- !u!1 &1802273094 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1047279639777590, guid: 2720181f5211f5e468f1e2fa951f6e27,
@@ -3779,6 +4023,7 @@ GameObject:
   - component: {fileID: 1828451185}
   - component: {fileID: 1828451184}
   - component: {fileID: 1828451187}
+  - component: {fileID: 1828451188}
   m_Layer: 0
   m_Name: PanelB3
   m_TagString: Panel
@@ -3841,8 +4086,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.29, z: 1}
+  m_Center: {x: 0, y: 2.16, z: 0}
 --- !u!33 &1828451186
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3869,6 +4114,19 @@ MonoBehaviour:
   load: 0
   maxLoad: 0
   side: 0
+--- !u!114 &1828451188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1828451182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b258786494595b4999a3fd3c5770c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToFade: 0
+  timesToFlicker: 0
 --- !u!1 &1927059907
 GameObject:
   m_ObjectHideFlags: 0
@@ -4001,6 +4259,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 65502034137364900, guid: cbf3b533057f2474eba73d600ae2da26,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbf3b533057f2474eba73d600ae2da26, type: 2}
   m_IsPrefabParent: 0
@@ -4016,6 +4279,7 @@ GameObject:
   - component: {fileID: 1980737098}
   - component: {fileID: 1980737097}
   - component: {fileID: 1980737100}
+  - component: {fileID: 1980737101}
   m_Layer: 0
   m_Name: PanelB6
   m_TagString: Panel
@@ -4078,8 +4342,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.29, z: 1}
+  m_Center: {x: 0, y: 2.16, z: 0}
 --- !u!33 &1980737099
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4106,6 +4370,19 @@ MonoBehaviour:
   load: 0
   maxLoad: 0
   side: 0
+--- !u!114 &1980737101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1980737095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b258786494595b4999a3fd3c5770c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountToFade: 0
+  timesToFlicker: 0
 --- !u!1 &2024573051
 GameObject:
   m_ObjectHideFlags: 0

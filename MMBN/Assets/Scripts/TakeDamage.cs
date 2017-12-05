@@ -27,16 +27,15 @@ public class TakeDamage : MonoBehaviour {
 		
 	}
 
-
+	// All Damage for the prototype happens when OnTriggerEnter() is called
 	void OnTriggerEnter (Collider coll)
 	{
 		// Switch based on the tag that the gameObject tied to the collider entering the trigger has
 		switch (coll.gameObject.tag)
 		{
 		// TODO Will this work when an enemy fires at player. Should we put a tag for Player Ammo and Enemy Ammo
-		// TODO We need to have some invincibility frames. Maybe use enums.
 		case "Ammo":
-			enemy = GetComponent<Enemy> ();
+			enemy = this.gameObject.GetComponent<Enemy> ();
 			projectile = coll.gameObject.GetComponent<Projectile> ();
 			if (enemy == null || projectile == null)
 			{
@@ -58,28 +57,37 @@ public class TakeDamage : MonoBehaviour {
 			break;
 
 		case "Bomb":
-			Debug.LogError ("Bomb hit enemy");
-			enemy = GetComponent<Enemy> ();
-			Bomb bomb = coll.gameObject.GetComponent<Bomb> ();
-			// If no Enemy or Bomb Component is attached to this then Log it out and return;
-			if (enemy == null || bomb == null)
+			
+			if (this.gameObject.tag == "Panel")
 			{
-				Debug.LogError ("Enemy Component not found on: " + this.gameObject.name + 
+				Debug.LogError ("Bomb hit Panel");
+				Panel panel = this.gameObject.GetComponent<Panel> ();
+				panel.condition = Condition.CRACKED;
+			} else
+			{
+				Debug.LogError ("Bomb hit Enemy");
+				enemy = GetComponent<Enemy> ();
+				Bomb bomb = coll.gameObject.GetComponent<Bomb> ();
+				// If no Enemy or Bomb Component is attached to this then Log it out and return;
+				if (enemy == null || bomb == null)
+				{
+					Debug.LogError ("Enemy Component not found on: " + this.gameObject.name +
 					"\nOr Bomb Component not found on " + coll.gameObject.name + ".");
-				return;
+					return;
+				}
+				// Subtract the amount of damage the Bomb component does from the Enemy
+				// But only if they are on the normal state where damage can be done
+				if (enemy.EState == Enemy.enemyState.normal)
+				{
+					enemy.HP -= bomb.Damage;
+				}
+				// Check if the gameObject attached to this Script has died (HP less than or equal to 0)
+				if (enemy.HP <= 0)
+				{
+					Die ();
+				}
+				flickerCoroutine = StartCoroutine (Flicker ());
 			}
-			// Subtract the amount of damage the Bomb component does from the Enemy
-			// But only if they are on the normal state where damage can be done
-			if (enemy.EState == Enemy.enemyState.normal)
-			{
-				enemy.HP -= bomb.Damage;
-			}
-			// Check if the gameObject attached to this Script has died (HP less than or equal to 0)
-			if (enemy.HP <= 0)
-			{
-				Die ();
-			}
-			flickerCoroutine = StartCoroutine (Flicker ());
 			break;
 
 		case "Melee":
