@@ -93,7 +93,6 @@ public class Combat : MonoBehaviour {
 			// Activate the MeleeTrigger attached to this Unit
 			// Grab the Melee Script attached to meleeTrigger and call the SetLifetime function
 			meleeTrigger.GetComponent<Melee> ().SetLifetime ();
-			Debug.Log ("Melee Attack Initiated");
 			break;
 		}
 	}
